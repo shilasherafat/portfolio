@@ -1,3 +1,18 @@
+// Adds bird animation using vanta.js
+VANTA.BIRDS({
+    el: ".introduction",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x0,
+    color1: 0xffffff
+})
+
+
 // color changing background
 const delayedColorChange = (color, delay) => {
     return new Promise((resolve, reject) => {
@@ -9,14 +24,15 @@ const delayedColorChange = (color, delay) => {
 }
 
 
-async function rainbow() {
-    await delayedColorChange('red', 1000)
-    await delayedColorChange('orange', 1000)
-    await delayedColorChange('yellow', 1000)
-    await delayedColorChange('green', 1000)
-    await delayedColorChange('blue', 1000)
-    await delayedColorChange('indigo', 1000)
-    await delayedColorChange('violet', 1000)
-}
+// async function rainbow() {
+//     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//     const delay = 1000;
 
-rainbow()
+//     while (true) {
+//         for (const color of colors) {
+//             await delayedColorChange(color, delay);
+//         }
+//     }
+// }
+
+// rainbow()
